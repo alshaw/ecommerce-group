@@ -35,21 +35,16 @@ street 2
 city state zip
 phone
 is_logged_in?
-zodiac sign 
+zodiac sign
 
 CART TABLE
-
 
 
 MODELS
 products : can belong to cart
 user
 cart : belongs_to user
-
 * later: recommended products
-
-
-
 
 
 FLOW
@@ -62,3 +57,16 @@ add items to cart
 remove items from cart
 
 change quantity in cart
+
+
+WHO IS DOING WHAT
+PATRICK
+Creating Models
+
+JARED
+Update notes and diagram as needed
+Seed file
+Look for images for the products
+Semantic styling
+
+ALLIE
