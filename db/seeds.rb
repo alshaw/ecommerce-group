@@ -61,6 +61,64 @@ pj14 = Product.create(name: "Wool Shag Rug", price: 399.00, is_available: true, 
 
 pj14 = Product.create(name: "Retro Lamp", price: 49.95, is_available: true, color: 'off-white', weight: 16, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: "Universal", category: "Mom's Basement Accessories", description: "The Right Light for Your Night")
 
+pa15 = Product.create(name: 'Pabst Blue Ribbon', price: 12.99, is_available: true, color: 'yellow-fizz', weight: 4.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '12 Pack', category: 'Essential Beers', description: 'Why would you drink anything else?')
+
+pa16 = Product.create(name: 'Pure-bred Pug', price: 1800, is_available: true, color: 'Black and off-white', weight: 8.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '', category: 'Adorable Micro-Dogs', description: "Pure-bred pug that comes with it's own instagram account.")
+
+pa17 = Product.create(name: 'Shiba-Inu', price: 2000, is_available: true, color: 'Tan', weight: 20.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '', category: 'Adorable Micro-Dogs', description: "The star of many memes.")
+
+pa18 = Product.create(name: 'Fake Service Dog Vest', price: 30.00, is_available: true, color: 'Red', weight: 2.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Small', category: 'Pet Accessories', description: '')
+
+pa19 = Product.create(name: 'Fake Service Dog Vest', price: 33.00, is_available: true, color: 'Red', weight: 2.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Medium', category: 'Pet Accessories', description: '')
+
+pa20 = Product.create(name: 'Fake Service Dog Vest', price: 36.00, is_available: true, color: 'Red', weight: 2.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Large', category: 'Pet Accessories', description: '')
+
+pa21 = Product.create(name: 'Cardigan Dog Sweater', price: 65.00, is_available: true, color: 'Blood Diamond Red', weight: 2.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Small', category: 'Pet Accessories', description: 'The dog version of our hip human cardigan.')
+
+pa22 = Product.create(name: 'Cardigan Dog Sweater', price: 68.00, is_available: true, color: 'Blood Diamond Red', weight: 2.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Medium', category: 'Pet Accessories', description: 'The dog version of our hip human cardigan.')
+
+pa23 = Product.create(name: 'Cardigan Dog Sweater', price: 71.00, is_available: true, color: 'Blood Diamond Red', weight: 2.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Large', category: 'Pet Accessories', description: 'The dog version of our hip human cardigan.')
+
+pa24 = Product.create(name: 'Adderall', price: 80.00, is_available: true, color: 'white', weight: 1.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '30 pills', category: 'Fake Prescriptions', description: "Pairs perfectly with PBR.")
+
+pa25 = Product.create(name: 'Xanax', price: 80.00, is_available: true, color: 'white', weight: 1.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '30 pills', category: 'Fake Prescriptions', description: "A little xanax, a pug, and our wool shag rug will start your Tuesday morning off right.")
+
+pa26 = Product.create(name: "Upcycled Desk Lamp", price: 1700, is_available: true, color: 'Vomit-Orange', weight: 4.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '', category: "Mom's Basement Accessories", description: "One person's trash is another person's piece of shit $1,700 desk lamp.")
+
+pa27 = Product.create(name: 'Typewriter', price: 850.00, is_available: true, color: 'Fire-engine Red', weight: 30.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: "1' X 1'", category: "Mom's Basement Accessories", description: "It's very heavy and doesn't even have a calculator, so good luck.")
+
+#pa28 = Product.create(name: '', price: , is_available: true, color: '', weight: 4.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '', category: '', description: '')
+
+#pa29 = Product.create(name: '', price: , is_available: true, color: '', weight: 4.0, img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: '', category: '', description: '')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 uj1 = User.create(first_name: 'Abel', last_name: 'Andrews', password: 'password', email: 'anonymous@anonymous.com', street_address_1: '123 Main Street', city: 'Anytown', zip: '11111', phone: '555-111-2424', zodiac_sign: 'Pisces')
 
 uj2 = User.create(first_name: 'Bettie', last_name: 'Balogna', password: 'password', email: 'anonymous@anonymous.com', street_address_1: '123 Main Street', city: 'Anytown', zip: '11111', phone: '555-111-2424', zodiac_sign: 'Libra')
