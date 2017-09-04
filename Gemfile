@@ -12,9 +12,12 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem "paperclip", "~> 5.0.0"
-
 gem 'jbuilder', '~> 2.5'
-gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
+gem 'semantic-ui-sass'
+# gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
+# gem 'less-rails-semantic_ui'
+# gem 'autoprefixer-rails'
+# gem 'therubyracer'
 gem 'jquery-rails'
 gem 'devise'
 

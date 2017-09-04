@@ -11,5 +11,8 @@
 // about supported directives.
 //
 //= require rails-ujs
+// Loads all Semantic javascripts
 //= require semantic-ui
+//= require semantic-ui/modal
+//= require semantic-ui/dropdown
 //= require_tree .
