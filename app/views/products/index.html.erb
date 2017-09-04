@@ -9,8 +9,12 @@
 
         <%# product_list = Products.select(:category).map(&:category).uniq %>
         <%# = product_list %>
+        <h1>x0x0</h1>
+        <%= image_tag "pug-jg.jpg" %>
+
         <% @product_categories =  @products.select(:category).map(&:category).uniq %>
         <h1><%= @product_categories %></h1>
+
         <h3>
           <% @product_categories.each do |category| %>
             <%= category %><span> *** </span>
@@ -20,7 +24,7 @@
 
         <h3>
           <% @products.each do |product| %>
-            <%= product.category, category %>
+            <%# = category/:id/product %>
           <% end %>
         </h3>
 
