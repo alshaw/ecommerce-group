@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  root 'users#index'
+  # root 'users#index'
+  root 'products#index'
   devise_for :users
 
-
-
-  resources :users do 
+  resources :users do
     resources :carts do
-      
+
   end
 
   resources :products
@@ -14,6 +13,6 @@ Rails.application.routes.draw do
 end
 
 
-  
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

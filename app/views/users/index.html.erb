@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Welcome to HipStore!</h1>
-<h2>The store for Hispters and Hipsters Only</h2>
+<h2>The store for Hipters and Hipsters Only</h2>
 
 <table>
   <thead>
@@ -12,13 +12,14 @@
 
   <tbody>
     <% @users.each do |user| %>
-    
       <tr>
         <td><%= link_to 'Login', user_session_path %></td>
         <td><%= link_to 'Join Us!', new_user_path %></td>
-
       </tr>
     <% end %>
+
+
+    
   </tbody>
 </table>
 
@@ -26,5 +27,3 @@
 
 
 <br>
-
-

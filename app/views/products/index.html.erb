@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<h1>Wilcommen Aus HipStore</h1>
+<h2>Our product categories:</h2>
 
 <table>
   <thead>
@@ -10,11 +11,28 @@
   </thead>
 
   <tbody>
+    <%# product_list = Products.select(:category).map(&:category).uniq %>
+    <%# = product_list %>
+    <% @product_categories =  @products.select(:category).map(&:category).uniq %>
+    <h3>
+      <% @product_categories.each do |category| %>
+        <%= category %><span> *** </span>
+      <% end %>
+    </h3>
+
+    <!-- get rid of this later: -->
     <% @products.each do |product| %>
       <tr>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%# = link_to 'Show', product %>
+          <%# = link_to product.category, user_product %>
+          <%= product.name %>
+        </td>
+        <td>
+          <%# = link_to 'Edit', edit_product_path(product) %>
+        </td>
+        <td>
+          <%# = link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
