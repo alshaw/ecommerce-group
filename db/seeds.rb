@@ -47,7 +47,19 @@ pj08 = Product.create(name: 'JustNow Jeggings', price: 145.99, is_available: tru
 
 pj09 = Product.create(name: 'JustNow Jeggings', price: 145.99, is_available: true, color: 'Deep Blue', weight: 'Twenty-two Ounces', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Universal', category: "Men's Clothing", description: "The finest stretch jeggings, made exclusively of Andean Alpaca wool and spandex.")
 
+pj10 = Product.create(name: "Women's Aviators", price: 79.99, is_available: true, color: 'Amber', weight: 'Two Ounces', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Universal', category: "Women's Clothing", description: "More Top Than Top Gun")
 
+pj10 = Product.create(name: "Summer Dress", price: 39.99, is_available: true, color: 'Tan', weight: 'Seven Ounces', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Universal', category: "Women's Clothing", description: "Embrace the essence of summer.")
+
+pj11 = Product.create(name: "Summer Dress", price: 39.99, is_available: true, color: 'Red', weight: 'Seven Ounces', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Universal', category: "Women's Clothing", description: "Embrace the essence of summer.")
+
+pj12 = Product.create(name: "Summer Dress", price: 39.99, is_available: true, color: 'Brown', weight: 'Seven Ounces', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Universal', category: "Women's Clothing", description: "Embrace the essence of summer.")
+
+pj13 = Product.create(name: "Summer Dress", price: 39.99, is_available: true, color: 'Black', weight: 'Seven Ounces', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: 'Universal', category: "Women's Clothing", description: "Embrace the essence of summer.")
+
+pj14 = Product.create(name: "Wool Shag Rug", price: 399.00, is_available: true, color: 'white', weight: 'Six Pounds', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: "4' x 6'", category: "Mom's Basement Accessories", description: "Only wool smells like wool.")
+
+pj14 = Product.create(name: "Retro Lamp", price: 49.95, is_available: true, color: 'off-white', weight: 'One Pound', img_url_large: 'http://www.google.com', img_url_small: 'http://www.google.com', size: "Universal", category: "Mom's Basement Accessories", description: "The Right Light for Your Night")
 
 c1 = Cart.create(name: 'xxx')
 u1 = User.create(name: 'yyy')
