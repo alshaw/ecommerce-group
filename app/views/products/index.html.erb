@@ -13,8 +13,12 @@
         <h3>
           <% @product_categories.each do |category| %>
             <%= category %><span> *** </span>
+            <%= link_to products#category, category %>
           <% end %>
         </h3>
+
+        <h3>test link to a category:</h3>
+
 
     </div>
   </div>

@@ -12,6 +12,11 @@ class ProductsController < ApplicationController
   def show
   end
 
+  def category
+    # now this controller has access to params[:category] for sql call
+    @products = Product.where(category: params[:category])
+  end
+
   # GET /products/new
   def new
     @product = Product.new
