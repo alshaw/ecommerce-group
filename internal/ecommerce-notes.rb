@@ -11,11 +11,12 @@ size
 category
 
 USER TABLE / MODEL
-first name
-last name
+first_name
+last_name
+password 
 email
-street 1
-street 2
+street_address_1
+street_address_2
 city state zip
 phone
 is_logged_in?
