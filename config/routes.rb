@@ -17,14 +17,8 @@ end
   # add the following to routes - then to products controller
   get '/products/:category', to: 'products#category', as: 'categories'
   # create a new controller for categories
-
-  # def category
-  #   # now this controller has access to params[:category] for sql call
-  #   @products = Product.where(category: params[:category])
-  # end
-
-  # create a new view in views/products for category.html
   #--------
+  get '/products/:product', to: 'products#name', as: 'product'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -6,3 +6,13 @@
 <%= button_to "Add to Cart", line_items_path(product_id: @product), class: "btn btn-success" %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+<ul>
+  <% @products.each do |product| %>
+    <!-- <%# = category %><span> *** </span> -->
+    <%#= link_to 'category', products_category %>
+    <li>
+      <h3><%#= link_to category, categories_path(category) %></h3>
+    </li>
+  <% end %>
+</ul>
