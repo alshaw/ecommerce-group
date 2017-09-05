@@ -1,4 +1,20 @@
 <p id="notice"><%= notice %></p>
+<%= image_tag 'main-image.jpg' %>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+
+<p>&nbsp;</p>
+<div class="ui twelve column grid">
+  <div class="row">
+    <div class="six wide column">
+      <%= image_tag(@product.img_url_large) %>
+    </div>
+    <div class="six wide column">
+      <hr />
+      <h1><%= @product.name %></h1>
+      <hr />
+      <p><%= @product.description %></p>
+      <p><%= @product.price %></p>
+      <button>ADD TO CART</button>
+    </div>
+  </div>
+</div>
