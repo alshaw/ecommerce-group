@@ -15,7 +15,7 @@ end
   #--------
   # HOW TO ADD A CUSTOM ROUTE:
   # add the following to routes - then to products controller
-  get '/products/:category', to: 'products#category'
+  get '/products/:category', to: 'products#category', as: 'categories'
   # create a new controller for categories
 
   # def category

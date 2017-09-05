@@ -16,14 +16,19 @@
         <h1><%= @product_categories %></h1>
 
         <h3>
-          <% @product_categories.each do |category| %>
+          <% @categories.each do |category| %>
             <%= category %><span> *** </span>
-            <%#= link_to @product_categories.category, category %>
+            <%#= link_to 'category', products_category %>
+            <%= link_to category, categories_path(category) %>
           <% end %>
         </h3>
 
         <h3>
+          
           <% @products.each do |product| %>
+            <%= product.category %>
+            
+
             <%# = category/:id/product %>
           <% end %>
         </h3>
