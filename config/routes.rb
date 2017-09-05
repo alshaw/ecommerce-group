@@ -18,7 +18,7 @@ end
   get '/products/:category', to: 'products#category', as: 'categories'
   # create a new controller for categories
   #--------
-  get '/products/:product', to: 'products#name', as: 'product'
+  get '/products/product/:id', to: 'products#show', as: 'product'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

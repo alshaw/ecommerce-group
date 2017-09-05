@@ -1,20 +1,21 @@
 <%= image_tag 'main-image.jpg' %>
+
+
 <h1>Category: <%= @products[0].category %></h1>
+
 
 <div class="ui twelve column grid">
   <% @products.each do |product|%>
     <div class="row">
       <div class="four wide column"><h3><%= link_to product.name, product_path(product) %></h3></div>
+      <!-- product GET    /products/product/:id(.:format)               products#show -->
+
       <div class="column"><%= product.color %></div>
       <div class="column"><%= product.size %></div>
       <div class="column"><%= product.price %></div>
       <div class="three wide column"><%= product.description %></div>
-      <!-- <div class="column">IMAGE</div> -->
       <div class="column"><%= image_tag(product.img_url_large) %></div>
-      <!-- <div class="column"><%= product.img_url_large %></div> -->
-      <%#= image_tag 'hero-image.jpg' %>
-
-      <div class="column">ADD TO CART <%# ruby url string %></div>
+      <div class="column">ADD TO CART</div>
     </div>
   <% end %>
 </div>
