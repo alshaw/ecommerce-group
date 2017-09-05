@@ -1,6 +1,15 @@
 <%= image_tag 'main-image.jpg' %>
 <h1>Category: <%= @products[0].category %></h1>
 
-<% @products.each do |product|%>
-  <%= product.name %>
-<% end %>
+<div class="ui twelve column grid">
+  <% @products.each do |product|%>
+    <div class="row">
+      <div class="four wide column"><h3><%= link_to product.name, product_path(product) %></h3></div>
+      <div class="column"><%= product.color %></div>
+      <div class="column"><%= product.size %></div>
+      <div class="column"><%= product.price %></div>
+      <div class="three wide column"><%= product.description %></div>
+      <div class="two wide column">IMAGE</div>
+    </div>
+  <% end %>
+</div>
