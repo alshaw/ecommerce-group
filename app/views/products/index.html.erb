@@ -9,18 +9,33 @@
 
         <%# product_list = Products.select(:category).map(&:category).uniq %>
         <%# = product_list %>
+        <h1>x0x0</h1>
+        <%= image_tag "pug-jg.jpg" %>
+
         <% @product_categories =  @products.select(:category).map(&:category).uniq %>
+        <h1><%= @product_categories %></h1>
+
         <h3>
-          <% @product_categories.each do |category| %>
+          <% @categories.each do |category| %>
             <%= category %><span> *** </span>
+            <%#= link_to 'category', products_category %>
+            <%= link_to category, categories_path(category) %>
+          <% end %>
+        </h3>
+
+        <h3>
+          
+          <% @products.each do |product| %>
+            <%= product.category %>
+            
+
+            <%# = category/:id/product %>
           <% end %>
         </h3>
 
     </div>
   </div>
 </div>
-
-
 
     <!-- get rid of this later: -->
     <!-- <% @products.each do |product| %>

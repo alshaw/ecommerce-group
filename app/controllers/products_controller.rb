@@ -5,11 +5,19 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    @categories = @products.select(:category).map(&:category).uniq
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+  end
+
+  def category
+    # now this controller has access to params[:category] for sql call
+    @products = Product.where(category: params[:category])
+    # binding.pry
+    # @products = Product.all
   end
 
   # GET /products/new
