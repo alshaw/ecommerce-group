@@ -4,34 +4,33 @@
   <div class="one column large screen only row">
     <div class="column">
 
-        <h1>Wilcommen Aus HipStore</h1>
-        <h2>Our product categories:</h2>
+        <!-- <h1>Wilcommen Aus HipStore</h1>
+        <h2>Our product categories:</h2> -->
 
         <%# product_list = Products.select(:category).map(&:category).uniq %>
         <%# = product_list %>
-        <h1>x0x0</h1>
-        <%= image_tag "pug-jg.jpg" %>
 
-        <% @product_categories =  @products.select(:category).map(&:category).uniq %>
-        <h1><%= @product_categories %></h1>
+        <!-- <%= image_tag "pug-jg.jpg" %> -->
+        <%= image_tag 'hero-image.jpg' %>
+        <%# @product_categories =  @products.select(:category).map(&:category).uniq %>
+        <!-- <h1><%= @product_categories %></h1> -->
 
-        <h3>
+        <ul>
           <% @categories.each do |category| %>
-            <%= category %><span> *** </span>
+            <!-- <%# = category %><span> *** </span> -->
             <%#= link_to 'category', products_category %>
-            <%= link_to category, categories_path(category) %>
+            <li>
+              <h3><%= link_to category, categories_path(category) %></h3>
+            </li>
           <% end %>
-        </h3>
+        </ul>
 
-        <h3>
-          
+        <!-- <h3>
           <% @products.each do |product| %>
             <%= product.category %>
-            
-
             <%# = category/:id/product %>
           <% end %>
-        </h3>
+        </h3> -->
 
     </div>
   </div>
