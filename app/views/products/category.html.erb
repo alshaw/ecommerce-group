@@ -9,8 +9,12 @@
       <div class="column"><%= product.size %></div>
       <div class="column"><%= product.price %></div>
       <div class="three wide column"><%= product.description %></div>
-      <div class="column">IMAGE</div>
-      <div class="column">ADD TO CART <% ruby url string %></div>
+      <!-- <div class="column">IMAGE</div> -->
+      <div class="column"><%= image_tag(product.img_url_large) %></div>
+      <!-- <div class="column"><%= product.img_url_large %></div> -->
+      <%#= image_tag 'hero-image.jpg' %>
+
+      <div class="column">ADD TO CART <%# ruby url string %></div>
     </div>
   <% end %>
 </div>
